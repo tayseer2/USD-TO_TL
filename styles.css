@@ -1,0 +1,58 @@
+/* Reset default browser styles (optional, but recommended for consistency) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form {
+  width: 450px; /* Adjust width as needed */
+  margin: 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  padding: 60px;
+  border-radius: 20px;
+}
+
+input {
+  width: 100%;  /* Full width within the form */
+  margin: 0 auto 30px;
+  padding: 20px;
+  background-color: #ccc;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  color: black;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.result {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 20px 0; /* Add some spacing below the result */
+  text-align: center; /* Center align the result for better readability */
+}
+
+/* Media query for smaller screens (adjust breakpoint as needed) */
+@media (max-width: 768px) {
+  form {
+    width: fit-content;
+    padding: 20px;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  input {
+    margin-bottom: 15px;
+  }
+
+  .result {
+    font-size: 14px;
+  }
+}
